@@ -1,0 +1,138 @@
+*
+{
+    
+    font-family: 'Merriweather Sans', sans-serif;
+   
+}
+
+#image
+{
+    float: right;
+    height: 400px;
+    width: 35%;
+    margin-top: -130px;
+    margin-right: 50px;
+    animation: float 3s linear infinite;
+}
+@keyframes float{
+    0%, 100%{
+      transform: translateY(0rem);
+    }
+    50%{
+      transform: translateY(3rem);
+    }
+  }
+
+#img
+{
+  animation: new-item-animation .3s linear forwards;
+  cursor: pointer;
+
+}
+@keyframes new-item-animation {
+  from {
+      opacity: 0.4;
+      transform: translateY(-100px);
+}
+
+  to {
+      opacity: 1;
+      transform : translateY(0);
+  }
+}
+#img2
+{
+  animation: new-item-animation .3s linear forwards;
+  cursor: pointer;
+}
+#img3
+{
+  animation: new-item-animation .3s linear forwards;
+  cursor: pointer;
+}
+#img4{
+  animation: new-item-animation .3s linear forwards;
+  cursor: pointer;
+}
+#img5{
+  animation: new-item-animation .3s linear forwards;
+  cursor: pointer;
+}
+#img6{
+  animation: new-item-animation .3s linear forwards;
+  cursor: pointer;
+}
+#content 
+{
+  animation: animation .3s linear forwards;
+  cursor: pointer;
+}
+@keyframes animation {
+  from {
+     
+      transform: translateY(-400px);
+}
+
+  to {
+    
+      transform : translateY(-300px);
+  }
+}
+#content2 {
+  animation: animation .3s linear forwards;
+  cursor: pointer;
+}
+#content3{
+  animation: animation .3s linear forwards;
+  cursor: pointer;
+}
+#content4{
+  animation: animation .3s linear forwards;
+  cursor: pointer;
+}
+#content5{
+  animation: animation .3s linear forwards;
+  cursor: pointer;
+}
+#content6{
+  animation: animation .3s linear forwards;
+  cursor: pointer;
+}
+
+
+@media (max-width:991px){
+
+  html{
+    font-size: 55%;
+  }
+
+  nav{
+    padding:2rem;
+  }
+
+  section{
+    padding:2rem;
+  }
+
+
+}
+
+@media (max-width:1118px){
+
+ #box1 ,#box2
+ {
+   height: 350px;
+   width: 100%;
+   margin-bottom: 100px;
+ }
+ #box1
+ {
+   margin-left: 200px;
+ }
+ #box3, #box4
+ {
+  height: 350px;
+  width: 100%;
+  margin-bottom: 100px;
+ }
+}

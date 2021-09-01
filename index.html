@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Factory</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!----NAVBAR--------------------->
+  <nav class="navbar fixed-top navbar-light bg-dark">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#" style="color: white;"> <i class="fas fa-utensils"
+          style="margin: 7px 0px 0px 3px;color: rgb(129, 80, 80);font-size: 25px;margin-right: 10px;"></i>Food</a>
+      <navbar style="float: right;">
+        <a style="margin-left: 20px;text-decoration: none;color: white; " href="#home">Home</a>
+        <a style="margin-left: 20px;text-decoration: none;color: white;" href="#special">Specifically</a>
+        <a style="margin-left: 20px; text-decoration: none;color: white;" href="#popular">Popular</a>
+        <a style="margin-left: 20px;text-decoration: none;color: white;" href="#gallery">Gallery</a>
+        <a style="margin-left: 20px;text-decoration: none;color: white;" href="#review">review</a>
+        <a style="margin-left: 20px;margin-right: 30px;text-decoration: none;color: white;" href="#order">Sign Up</a>
+      </navbar>
+    </div>
+
+  </nav>
+
+
+
+
+
+
+  <!--fOOD MADE WITH LOVE---------------------------------->
+
+  <section>
+    <div style="height: 500px;width: 100%;" id="home">
+      <div style="height: 40px;width: 40%;margin: 204px 20px auto 110px;">
+        <h1 style="font-size: 40px;margin-bottom: 20px;">Food Made with Love</h1>
+        <h4 style="font-size: 23px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nihil beatae rerum
+          est nisi eaque veniam similique vitae distinctio qui, vel voluptatem magni porro fugit atque suscipit, tenetur
+          nemo. Ullam!Lorem</h4>
+        <button type="button" class="btn btn-outline-danger" style="margin-top: 20px;">Order Now</button>
+      </div>
+      <img src="./images/home-img.png" id="image">
+
+    </div>
+
+    <!--------Our Special Dishes-------------------------------->
+    <div style="height: 400px;width: 100%;">
+      <h1 style="text-align: center;margin-bottom: 100px;" id="special">Our Special Dishes</h1>
+      <!------Box Itemss------------------>
+      <div style="height: 300px;width: 25%;border: 2px solid salmon;margin-left: 100px;margin-bottom: 30px;float: left;"
+        class="box" onmouseover="changeBox()" onmouseout=" changeAgain()">
+
+        <img src="./images/s-1.png" style="margin-left: 140px;margin-top: 30px;">
+        <h2 style="text-align: center;">Tasty Burger</h2>
+        <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident itaque porro
+          quia earum iusto nemo iure at
+          saepe autem ullam? Aut, maxime facilis beatae repellendus animi sapiente totam quidem officia.</p>
+        <div style="  transform: translate(0%,-80%);">
+          <img src="./images/s-img-1.jpg" style="height: 300px;width: 100%;margin-top: -20px;display: none;" id="img">
+        </div>
+
+
+      </div>
+      <!-----2ND BOX--------------------->
+      <div style="height: 300px;width: 25%;border: 2px solid salmon;margin-left: 50px;margin-bottom: 30px;float: left;"
+        onmouseover="secBox()" onmouseout="secBoxAgain()">
+        <img src="./images/s-2.png" style="margin-left: 140px;margin-top: 30px;">
+        <h2 style="text-align: center;">Tasty Pizza</h2>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit delectus
+          quaerat, obcaecati vel consequuntur
+          iusto aliquam illo nostrum alias minima quibusdam vitae repudiandae nulla dolore quo, qui sapiente error
+          itaque.
+        </p>
+
+
+        <div style=" transform: translate(0%,-86%);">
+          <img src="./images/s-img-2.jpg" style="height: 300px;width: 100%;margin-top: -22px;display: none;" id="img2">
+
+        </div>
+      </div>
+
+
+      <!-------3rd Box---------------------------->
+      <div style="height: 300px;width: 25%;border: 2px solid salmon;margin-left: 50px;margin-bottom: 30px;float: left;"
+        onmouseover="thrBox()" onmouseout="thrBoxAgain()">
+        <img src="./images/s-3.png" style="margin-left: 140px;margin-top: 30px;">
+        <h2 style="text-align: center;">Tasty Ice-cream</h2>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reprehenderit
+          deserunt animi, excepturi
+          tempore asperiores ipsam nihil vitae aperiam iure laborum, ab eveniet adipisci praesentium doloremque velit
+          dolor consequuntur. Iure.</p>
+
+        <div style=" transform: translate(0%,-86%);">
+          <img src="./images/s-img-3.jpg" style="height: 300px;width: 100%;margin-top: -20px;display: none;" id="img3">
+        </div>
+      </div>
+
+
+    </div>
+    <!------Newww section------------------------->
+    <div style="height: 500px;width: 100%;margin-top: 140px;">
+      <!------Box Itemss------------------>
+      <div style="height: 300px;width: 25%;border: 2px solid salmon;margin-left: 100px;margin-bottom: 30px;float: left;"
+        class="box" onmouseover="fBox()" onmouseout="fBoxAgain() ">
+
+        <img src="./images/s-4.png" style="margin-left: 140px;margin-top: 30px;">
+        <h2 style="text-align: center;">Tasty Drinks</h2>
+        <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident itaque porro
+          quia earum iusto nemo iure
+          at saepe autem ullam? Aut, maxime facilis beatae repellendus animi sapiente totam quidem officia.</p>
+        <div style="  transform: translate(0%,-80%);">
+          <img src="./images/s-img-4.jpg" style="height: 300px;width: 100%;margin-top: -30px;display: none;" id="img4">
+        </div>
+
+
+      </div>
+      <!-----2ND BOX--------------------->
+      <div style="height: 300px;width: 25%;border: 2px solid salmon;margin-left: 50px;margin-bottom: 30px;float: left;"
+        onmouseover="fiBox()" onmouseout="fiBoxAgain()">
+        <img src="./images/s-5.png" style="margin-left: 140px;margin-top: 30px;">
+        <h2 style="text-align: center;">Tasty Chocolate</h2>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit delectus
+          quaerat, obcaecati vel consequuntur
+          iusto aliquam illo nostrum alias minima quibusdam vitae repudiandae nulla dolore quo, qui sapiente error
+          itaque.</p>
+
+
+        <div style=" transform: translate(0%,-86%);">
+          <img src="./images/s-img-5.jpg" style="height: 300px;width: 100%;margin-top: -37px;display: none;" id="img5">
+
+        </div>
+      </div>
+
+
+      <!-------3rd Box---------------------------->
+      <div style="height: 300px;width: 25%;border: 2px solid salmon;margin-left: 50px;margin-bottom: 30px;float: left;"
+        onmouseover="sixBox()" onmouseout="sixBoxAgain()">
+        <img src="./images/s-6.png" style="margin-left: 140px;margin-top: 30px;">
+        <h2 style="text-align: center;">Tasty Breakfast</h2>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus reprehenderit
+          deserunt animi, excepturi
+          tempore asperiores ipsam nihil vitae aperiam iure laborum, ab eveniet adipisci praesentium doloremque velit
+          dolor consequuntur. Iure.</p>
+
+        <div style=" transform: translate(0%,-86%);">
+          <img src="./images/s-img-6.jpg" style="height: 300px;width: 100%;margin-top: -37px;display: none;" id="img6">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----Most Popular Foods--------------------->
+  <section>
+    <div style="height: 500px;width: 100%;" id="box1">
+      <h1 style="text-align: center;" id="popular">Most Popular Foods</h1>
+      <div style="height: 350px;width: 27%;border: 2px solid salmon;margin-left: 70px; float: left;">
+        <img src="./images/p-1.jpg" style="height: 200px;width: 80%;margin-left: 38px;">
+        <h3 style="text-align: center;">Tasty Barger</h3>
+        <div style="margin-left: 120px;">
+          <i class="far fa-star" style="color: yellow;"></i>
+
+          <i class="far fa-star"  ></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+
+        <button type="button" class="btn btn-outline-danger " style="margin-left: 120px;">Order Now</button>
+      </div>
+
+
+      <div style="height: 350px;width: 27%;border: 2px solid salmon;margin-left: 70px;float: left;" id="box2">
+        <img src="./images/p-2.jpg" style="height: 200px;width: 80%;margin-left: 38px;">
+        <h3 style="text-align: center;">Tasty Cake</h3>
+        <div style="margin-left: 120px;">
+          <i class="far fa-star" style="color: yellow;"></i>
+
+          <i class="far fa-star" ></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+
+        <button type="button" class="btn btn-outline-danger " style="margin-left: 120px;">Order Now</button>
+      </div>
+
+
+      <div style="height: 350px;width: 27%;border: 2px solid salmon;margin-left: 70px; float: left;" id="box3">
+        <img src="./images/p-3.jpg" style="height: 200px;width: 80%;margin-left: 38px;">
+        <h3 style="text-align: center;">Tasty Sweets</h3>
+        <div style="margin-left: 120px;">
+          <i class="far fa-star" style="color: yellow;"></i>
+
+          <i class="far fa-star" ></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+
+        <button type="button" class="btn btn-outline-danger " style="margin-left: 120px;">Order Now</button>
+      </div>
+
+    </div>
+
+    <div style="height: 500px;width: 100%;">
+
+      <div style="height: 350px;width: 27%;border: 2px solid salmon;margin-left: 70px; float: left;" id="box4">
+        <img src="./images/p-4.jpg" style="height: 200px;width: 80%;margin-left: 38px;">
+        <h3 style="text-align: center;">Tasty Cup Cake</h3>
+        <div style="margin-left: 120px;">
+          <i class="far fa-star"style="color: yellow;" ></i>
+
+          <i class="far fa-star" ></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+
+        <button type="button" class="btn btn-outline-danger " style="margin-left: 120px;">Order Now</button>
+      </div>
+
+
+      <div style="height: 350px;width: 27%;border: 2px solid salmon;margin-left: 70px;float: left;" id="box5">
+        <img src="./images/p-5.jpg" style="height: 200px;width: 80%;margin-left: 38px;">
+        <h3 style="text-align: center;">Tasty Drinks</h3>
+        <div style="margin-left: 120px;">
+          <i class="far fa-star"style="color: yellow;" ></i>
+
+          <i class="far fa-star" ></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+
+        <button type="button" class="btn btn-outline-danger " style="margin-left: 120px;">Order Now</button>
+      </div>
+
+
+      <div style="height: 350px;width: 27%;border: 2px solid salmon;margin-left: 70px; float: left;" id="box6">
+        <img src="./images/p-6.jpg" style="height: 200px;width: 80%;margin-left: 38px;">
+        <h3 style="text-align: center;">Tasty Ice-cream</h3>
+        <div style="margin-left: 120px;">
+          <i class="far fa-star"  style="color: yellow;"></i>
+
+          <i class="far fa-star" ></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+
+        <button type="button" class="btn btn-outline-danger " style="margin-left: 120px;">Order Now</button>
+      </div>
+
+    </div>
+  </section>
+  <!----How It Works----------------------------------------->
+  <section>
+    <div style="padding: 0px 40px 0px 70px;">
+      <h2 style="text-align: center;">How It Works</h2>
+
+      <img src="./images/step-1.jpg" style="margin-left: 240px;height: 130px;width: 10%;border-radius: 65px;">
+
+      <img src="./images/step-2.jpg" style="margin-left: 80px;height: 130px;width: 10%;border-radius: 65px;">
+      <img src="./images/step-3.jpg" style="margin-left: 80px;height: 130px;width: 10%;border-radius: 65px;">
+      <img src="./images/step-4.jpg" style="margin-left: 80px;height: 130px;width: 10%;border-radius: 65px;">
+      <div style="display: flex;gap: 100px;margin-left: 190px;">
+
+        <h4>Choose Your<br> Favorite Food</h4>
+        <h4>Free & Fast<br> Delivery</h4>
+        <h4>Easy Pament <br>Methods</h4>
+        <h4>And Enjoy<br> Your Food</h4>
+      </div>
+
+    </div>
+  </section>
+  <!----------Food Gallery------------------------------------->
+  <section>
+    <div style="height: 50px;width: 100%;margin-top: 100px;" id="gallery">
+      <h1 style="text-align: center;margin-bottom: 70px;">Our Food Gallery</h1>
+
+
+      <!-----1st Box ever--------------------------------------------------->
+      <div style="height: 300px;width: 25%;border: 2px solid salmon;margin-left: 90px;float: left;">
+        <!----image div------------------->
+        <div onmouseover="contentOne()" onmouseout="changeContent()" id="pic">
+          <img src="./images/g-1.jpg" style="height:300px;width: 100%;">
+        </div>
+
+        <!-------content div-------------->
+        <div
+          style="height: 300px;width: 100%;text-align: center;border: 2px solid salmon;padding-top: 40px;display: none;transform: translate(0%,-100%);"
+          id="content" onmouseover="contentOne()" onmouseout="changeContent()">
+          <h4>Tasty Food</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate eum impedit libero nam incidunt
+            excepturi fuga</p>
+          <button type="button" class="btn btn-outline-danger">Order Now</button>
+        </div>
+      </div>
+
+      <!-----2nd Box --------------------------------------------------->
+      <div style="height: 300px;width: 25%;border: 2px solid salmon;margin-left: 60px;float: left;">
+        <!----image div------------------->
+        <div onmouseover="contentTwo()" onmouseout="changeContentTwo()" id="pic2">
+          <img src="./images/g-2.jpg" style="height:300px;width: 100%;">
+        </div>
+
+        <!-------content div-------------->
+        <div
+          style="height: 300px;width: 100%;text-align: center;border: 2px solid salmon;padding-top: 40px;display: none;transform: translate(0%,-100%);"
+          id="content2" onmouseover="contentTwo()" onmouseout="changeContentTwo()">
+          <h4>Tasty Food</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate eum impedit libero nam incidunt
+            excepturi fuga</p>
+          <button type="button" class="btn btn-outline-danger">Order Now</button>
+        </div>
+      </div>
+      <!-----3rd Box --------------------------------------------------->
+      <div style="height: 300px;width: 25%;border: 2px solid salmon;margin-left: 60px;float: left;">
+        <!----image div------------------->
+        <div onmouseover="contentThre()" onmouseout="changeContentThre()" id="pic3">
+          <img src="./images/g-3.jpg" style="height:300px;width: 100%;">
+        </div>
+
+        <!-------content div-------------->
+        <div
+          style="height: 300px;width: 100%;text-align: center;border: 2px solid salmon;padding-top: 40px;display: none;transform: translate(0%,-100%);"
+          id="content3" onmouseover="contentThre()" onmouseout="changeContentThre()">
+          <h4>Tasty Food</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate eum impedit libero nam incidunt
+            excepturi fuga</p>
+          <button type="button" class="btn btn-outline-danger">Order Now</button>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-------------2nd div of gallery--------------------->
+
+
+
+    <div style="height: 500px;width: 100%;margin-top: 100px;">
+
+
+      <!-----1st Box ever--------------------------------------------------->
+      <div style="height: 300px;width: 25%;border: 2px solid salmon;margin-left: 90px;float: left;margin-top: 60px;">
+        <!----image div------------------->
+        <div onmouseover="contentFour()" onmouseout="changeContentFour()" id="pic4">
+          <img src="./images/g-4.jpg" style="height:300px;width: 100%;">
+        </div>
+
+        <!-------content div-------------->
+        <div
+          style="height: 300px;width: 100%;text-align: center;border: 2px solid salmon;padding-top: 40px;display: none;transform: translate(0%,-100%);"
+          id="content4" onmouseover="contentFour()" onmouseout="changeContentFour()">
+          <h4>Tasty Food</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate eum impedit libero nam incidunt
+            excepturi fuga</p>
+          <button type="button" class="btn btn-outline-danger">Order Now</button>
+        </div>
+      </div>
+
+      <!-----2nd Box --------------------------------------------------->
+      <div style="height: 300px;width: 25%;border: 2px solid salmon;margin-left: 60px;float: left;margin-top: 60px;">
+        <!----image div------------------->
+        <div onmouseover="contentFive()" onmouseout="changeContentFive()" id="pic5">
+          <img src="./images/g-5.jpg" style="height:300px;width: 100%;">
+        </div>
+
+        <!-------content div-------------->
+        <div
+          style="height: 300px;width: 100%;text-align: center;border: 2px solid salmon;padding-top: 40px;display: none;transform: translate(0%,-100%);"
+          id="content5" onmouseover="contentFive()" onmouseout="changeContentFive()">
+          <h4>Tasty Food</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate eum impedit libero nam incidunt
+            excepturi fuga</p>
+          <button type="button" class="btn btn-outline-danger">Order Now</button>
+        </div>
+      </div>
+      <!-----3rd Box --------------------------------------------------->
+      <div style="height: 300px;width: 25%;border: 2px solid salmon;margin-left: 60px;float: left;margin-top: 60px;">
+        <!----image div------------------->
+        <div onmouseover="contentSix()" onmouseout="changeContentSix()" id="pic6">
+          <img src="./images/g-6.jpg" style="height:300px;width: 100%;">
+        </div>
+
+        <!-------content div-------------->
+        <div
+          style="height: 300px;width: 100%;text-align: center;border: 2px solid salmon;padding-top: 40px;display: none;transform: translate(0%,-100%);"
+          id="content6" onmouseover="contentSix()" onmouseout="changeContentSix()">
+          <h4>Tasty Food</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate eum impedit libero nam incidunt
+            excepturi fuga</p>
+          <button type="button" class="btn btn-outline-danger">Order Now</button>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div style="height: 500px;width: 100%;margin-top: 219px;">
+      <h1 style="text-align: center;margin-bottom: 120px;" id="review">Our Customers review</h1>
+
+      <div
+        style="height: 300px;width: 25%;border: 2px solid rgb(65, 60, 60);margin-left: 80px;background-color: rgb(65, 60, 60);float: left;">
+        <h3 style="color: white;text-align: center;margin-top: 70px;">Aratrika Horh</h3>
+        <div style="color: yellow;margin-left: 120px;">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+        </div>
+
+        <p style="color: white;text-align: center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+          doloribus debitis minus repudiandae? Suscipit, cum beatae error quam ab corporis temporibus, consequuntur amet
+          cupiditate tempora dicta quidem distinctio autem facere.</p>
+      </div>
+
+      <div
+        style="height: 300px;width: 25%;border: 2px solid rgb(65, 60, 60);margin-left: 80px;background-color: rgb(65, 60, 60);float: left;">
+        <h3 style="color: white;text-align: center;margin-top: 70px;">Aratrika Horh</h3>
+        <div style="color: yellow;margin-left: 120px;">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+        </div>
+
+        <p style="color: white;text-align: center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+          doloribus debitis minus repudiandae? Suscipit, cum beatae error quam ab corporis temporibus, consequuntur amet
+          cupiditate tempora dicta quidem distinctio autem facere.</p>
+      </div>
+
+      <div
+        style="height: 300px;width: 25%;border: 2px solid rgb(65, 60, 60);margin-left: 80px;background-color: rgb(65, 60, 60);float: left;">
+        <h3 style="color: white;text-align: center;margin-top: 70px;">Aratrika Horh</h3>
+        <div style="color: yellow;margin-left: 120px;">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+        </div>
+
+        <p style="color: white;text-align: center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
+          doloribus debitis minus repudiandae? Suscipit, cum beatae error quam ab corporis temporibus, consequuntur amet
+          cupiditate tempora dicta quidem distinctio autem facere.</p>
+      </div>
+
+    </div>
+  </section>
+  <!---------------------Order Items------------>
+  <section>
+
+    <div style="height: 500px;width: 100%;">
+      <h1 style="text-align: center;margin-top: 60px;margin-bottom: 70px;" id="order">Sign Up For Other Details</h1>
+      <div style="display: flex;">
+        <img src="./images/order-img.jpg"
+          style="height: 389px;width: 34%;margin-left: 80px;border-radius: 30px;margin-bottom: 70px;margin-right: 70px;">
+        <div style="width: 50%; margin-top: 30px;">
+          <input type="text" placeholder="First Name" style="margin-right: 30px;width: 46%;margin-bottom: 30px;padding: 10px;"> <input
+            type="text" placeholder="Last Name" style="width: 46%;padding: 10px;"><br>
+          <input type="email" placeholder="Email ID" style="width: 46%;margin-bottom: 30px;padding: 10px;"><br>
+          <TEXTAREA Name="content" placeholder="Address"
+            style="width: 60%;margin-bottom: 20px;height: 112px;padding: 10px;"></TEXTAREA><br>
+          <button type="button" class="btn btn-outline-danger" style="padding: 10px;">Sign Up</button>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+  <!--------Footer----------------->
+  <footer>
+
+
+    <div style="height: 300px;width: 100%;background-color:rgb(65, 60, 60) ;margin-top: 80px;">
+      <div style="height: 200px;width: 25%;float: left;text-align: center;margin-left: 160px;">
+        <h4>Find Us</h4>
+        <p style="color: rgb(134, 126, 126);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illum
+          sapiente qui aspernatur accusamus id, aliquid fugiat vitae ducimus voluptatem non odio obcaecati reprehenderit
+          assumenda asperiores saepe unde culpa quo!</p>
+        <i class="fas fa-phone-alt" style="color: rgb(134, 126, 126);"></i><span style="color: rgb(134, 126, 126);">
+          +91-999999999</span><br>
+        <i class="fas fa-envelope" style="color: rgb(134, 126, 126);"></i><span
+          style="color: rgb(134, 126, 126);">example@gmail.com</span>
+      </div>
+      <div style="height: 200px;width: 25%;float: left;text-align: center;margin-left: 60px;">
+        <h4 style="margin-bottom: 30px;">Follow Us</h4>
+        <i class="fab fa-facebook-square" style="margin-bottom: 20px;color: rgb(134, 126, 126);"></i><span
+          style="color: rgb(134, 126, 126);">Facebook</span><br>
+        <i class="fab fa-twitter" style="color: rgb(134, 126, 126);padding-bottom:20px;"></i><span
+          style="color: rgb(134, 126, 126);">Twitter</span><br>
+
+        <i class="fab fa-instagram" style="color: rgb(134, 126, 126);padding-bottom:20px;"></i><span
+          style="color: rgb(134, 126, 126);">Instagram</span><br>
+
+        <i class="fab fa-youtube" style="color: rgb(134, 126, 126);padding-bottom:20px;"></i><span
+          style="color: rgb(134, 126, 126);">You Tube</span><br>
+      </div>
+      <a href="#home"><i class="fab fa-autoprefixer"
+          style="float: left;font-size: 60px;margin: 211px 10px auto 318px;color: rgb(134, 126, 126);cursor: pointer;"></i></a>
+      <hr>
+
+    </div>
+
+    <div style="height: 30px;width: 100%;text-align: center;background-color:rgb(65, 60, 60) ;">
+      <span style="padding-top: 40px;">@created by Aratrika</span>
+    </div>
+
+  </footer>
+
+
+
+  <script>
+    function changeBox() {
+      document.getElementById("img").style.display = "block";
+
+    }
+    function changeAgain() {
+      document.getElementById("img").style.display = "none";
+
+    }
+
+    function secBox() {
+      document.getElementById("img2").style.display = "block";
+
+    }
+    function secBoxAgain() {
+      document.getElementById("img2").style.display = "none";
+    }
+
+    function thrBox() {
+      document.getElementById("img3").style.display = "block";
+    }
+    function thrBoxAgain() {
+      document.getElementById("img3").style.display = "none";
+    }
+
+    //4th box
+    function fBox() {
+      document.getElementById("img4").style.display = "block";
+    }
+
+    function fBoxAgain() {
+      document.getElementById("img4").style.display = "none";
+    }
+
+    //5th box
+
+    function fiBox() {
+      document.getElementById("img5").style.display = "block";
+    }
+
+    function fiBoxAgain() {
+      document.getElementById("img5").style.display = "none";
+    }
+    //6th box
+    function sixBox() {
+      document.getElementById("img6").style.display = "block";
+    }
+
+    function sixBoxAgain() {
+      document.getElementById("img6").style.display = "none";
+    }
+
+
+
+
+
+
+    //our food gallery
+    function contentOne() {
+      document.getElementById("content").style.display = "block";
+      document.getElementById("pic").style.opacity = "0.6";
+      document.getElementById("content").style.color = "black";
+
+    }
+    function changeContent() {
+      document.getElementById("content").style.display = "none";
+      document.getElementById("pic").style.opacity = "1";
+    }
+
+    //2nd box
+    function contentTwo() {
+      document.getElementById("content2").style.display = "block";
+      document.getElementById("pic2").style.opacity = "0.6";
+      document.getElementById("content2").style.color = "black";
+    }
+    function changeContentTwo() {
+      document.getElementById("content2").style.display = "none";
+      document.getElementById("pic2").style.opacity = "1";
+    }
+
+    //3rd box
+    function contentThre() {
+      document.getElementById("content3").style.display = "block";
+      document.getElementById("pic3").style.opacity = "0.6";
+      document.getElementById("content3").style.color = "black";
+    }
+    function changeContentThre() {
+      document.getElementById("content3").style.display = "none";
+      document.getElementById("pic3").style.opacity = "1";
+    }
+
+    //4th box
+    function contentFour() {
+      document.getElementById("content4").style.display = "block";
+      document.getElementById("pic4").style.opacity = "0.6";
+      document.getElementById("content4").style.color = "black";
+    }
+    function changeContentFour() {
+      document.getElementById("content4").style.display = "none";
+      document.getElementById("pic4").style.opacity = "1";
+    }
+    //5th box
+    function contentFive() {
+      document.getElementById("content5").style.display = "block";
+      document.getElementById("pic5").style.opacity = "0.6";
+      document.getElementById("content5").style.color = "black";
+    }
+    function changeContentFive() {
+      document.getElementById("content5").style.display = "none";
+      document.getElementById("pic5").style.opacity = "1";
+    }
+
+    //6th box
+    function contentSix() {
+      document.getElementById("content6").style.display = "block";
+      document.getElementById("pic6").style.opacity = "0.6";
+      document.getElementById("content6").style.color = "black";
+    }
+    function changeContentSix() {
+      document.getElementById("content6").style.display = "none";
+      document.getElementById("pic6").style.opacity = "1";
+    }
+  </script>
+
+
+
+</body>
+
+</html>
