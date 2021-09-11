@@ -136,3 +136,7 @@
   margin-bottom: 100px;
  }
 }
+#home
+{
+  background-image: url(../images/home-bg.jpg);
+}
